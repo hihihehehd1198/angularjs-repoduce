@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+
+    <title>AngularJS Project</title>
+    <link
+      rel="stylesheet"
+      href="bower_components/textAngular-1.5.16/dist/textAngular.css"
+    />
+    <link
+      rel="icon"
+      href="./png-transparent-angular-js-full-logo-tech-companies.png"
+    />
+    <link
+      rel="stylesheet"
+      href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bower_components/fontawesome-free-6.4.2-web/css/all.css"
+    />
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="MainController" class="container">
+      <!-- Your AngularJS and Bootstrap content goes here -->
+      <h1>{{ message }}</h1>
+      <h1>my angular verison : {{ versionName }}</h1>
+      <div>
+        <h2>this is child component area</h2>
+        <my-child-component></my-child-component>
+      </div>
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    ]
+    <script src="bower_components/textAngular-1.5.16/dist/textAngular-rangy.min.js"></script>
+    <script src="bower_components/textAngular-1.5.16/dist/textAngular-sanitize.js"></script>
+    <script src="bower_components/textAngular-1.5.16/dist/textAngular-sanitize.min.js"></script>
+    <script src="bower_components/textAngular-1.5.16/dist/textAngular.js"></script>
+    <script src="bower_components/textAngular-1.5.16/dist/textAngular.min.js"></script>
+    <script src="bower_components/textAngular-1.5.16/dist/textAngularSetup.js"></script>
+    <script src="bower_components/textAngular-1.5.16/dist/textAngular.umd.js"></script>
+
+    <script type="text/javascript">
+      // var app = angular.module("myApp", []);
+      // app.controller("MainController", function ($scope, $rootScope) {});
+
+      var app = angular.module("myApp", ["textAngular"]);
+      app.controller("MainController", [
+        "$scope",
+        "textAngularManager",
+        function demoController($scope, textAngularManager) {},
+      ]);
+    </script>
+    <script src="./child-component/child-comp1.js"></script>
+  </body>
+</html>

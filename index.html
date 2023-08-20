@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+
+    <title>AngularJS Project</title>
+
+    <link
+      rel="stylesheet"
+      href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bower_components/bootstrap/dist/css/bootstrap-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bower_components/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/all.css" />
+  </head>
+  <body>
+    <div ng-app="myApp" class="container">
+      <!-- Your AngularJS and Bootstrap content goes here -->
+      <div>
+        <h1 class="p-3 m-3 border bg-dark text-light">{{ message }}</h1>
+      </div>
+      <my-child-component></my-child-component>
+    </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript">
+      var app = angular.module("myApp", []);
+      app.controller("MainController", function ($scope) {
+        $scope.message = "web-components";
+        $scope.editorContent = "";
+      });
+    </script>
+    <script type="text/javascript" src="./page/comp1/comp1.js"></script>
+    <script
+      type="text/javascript"
+      src="./common/ckeditor-textbox/ckeditor.js"
+    ></script>
+  </body>
+</html>

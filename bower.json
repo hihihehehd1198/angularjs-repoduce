@@ -1,0 +1,20 @@
+{
+  "name": "ckeditor-angularjs",
+  "authors": [
+    "H D N <1thoidame1998@gmail.com>"
+  ],
+  "description": "angularjs with ckeditor",
+  "main": "index.html",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
